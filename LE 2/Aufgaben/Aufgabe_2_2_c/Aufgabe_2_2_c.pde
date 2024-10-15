@@ -7,5 +7,5 @@ void draw() {
 }
 
 void mousePressed() {
-  background(random(265), random(265), random(256));
+  background(random(256), random(256), random(256));
 }
