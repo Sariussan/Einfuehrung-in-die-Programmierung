@@ -51,8 +51,6 @@ void draw() {
   // check if boundary is reached -> switch directions if so & stop moving & set to boundary position
   if ((x1 <= leftBoundary || x1 >= rightBoundary) && move1) {
     move1 = false;
-    println("boundary reached on 1");
-
     speed1 = -speed1;
     if (x1 < 0) {
       x1 = leftBoundary;
@@ -62,7 +60,6 @@ void draw() {
   }
   if ((x2 <= leftBoundary || x2 >= rightBoundary)&& move2) {
     move2 = false;
-    println("boundary reached on 2");
     speed2 = -speed2;
     if (x2 < 0) {
       x2 = leftBoundary;
