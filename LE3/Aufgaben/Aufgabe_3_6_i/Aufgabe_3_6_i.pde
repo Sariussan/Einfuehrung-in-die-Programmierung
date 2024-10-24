@@ -6,7 +6,6 @@ int speed1 = 3;
 int speed2 = 3;
 int leftBoundary = -50;
 int rightBoundary = 50;
-boolean mousePressed = false;
 boolean hover1 = false;
 boolean hover2 = false;
 
