@@ -24,7 +24,7 @@ void draw() {
     x = x + speed;
   }
 
-  if (x <= leftBoundary || x >= rightBoundary) { // endpunkt erreicht -> switch sides and move
+  if ((x <= leftBoundary || x >= rightBoundary) && move) { // endpunkt erreicht -> switch sides and move
     move = false;
     speed = -speed;
     if (x < 0) {
