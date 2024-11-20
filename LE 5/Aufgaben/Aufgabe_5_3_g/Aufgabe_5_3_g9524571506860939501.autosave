@@ -1,0 +1,25 @@
+void setup() {
+    size(200, 200);
+}
+
+void draw() {
+    background(0);
+
+
+
+    //calc lines
+
+
+
+
+    //draw all lines
+    stroke(80);
+    for (int i = 0; i <= 10; i++) {
+        line(60, 0 + i * 20, 140,0 + i * 20);
+    }
+
+
+
+
+    //
+}
