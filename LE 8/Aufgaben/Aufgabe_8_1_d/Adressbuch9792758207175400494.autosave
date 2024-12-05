@@ -1,0 +1,15 @@
+class Adressbuch {
+  String[] namen;
+  String[] tel;
+
+  Adressbuch() {
+    namen = new String[];
+    append(namen, "Larry");
+    append(namen, "Lisa");
+    append(namen, "Harry");
+
+    append(tel, "111 222");
+    append(tel, "333 444");
+    append(tel, "012 345");
+  }
+}

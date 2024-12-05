@@ -9,7 +9,7 @@ void setup() {
   for (int i = 0; i < personal.length; i++) {
     println(personal[i].name);
   }
-  println(""):;
+  println("");
   
   // people older than 30
   for (int i = 0; i < personal.length; i++) {
