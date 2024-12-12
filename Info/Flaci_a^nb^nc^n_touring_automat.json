@@ -1,0 +1,237 @@
+﻿{
+  "name": "a*nb*nc*n",
+  "description": "",
+  "type": "TM",
+  "automaton": {
+    "acceptCache": [],
+    "simulationInput": [
+      "a",
+      "a",
+      "a",
+      "b",
+      "b",
+      "b",
+      "c",
+      "c",
+      "c"
+    ],
+    "Alphabet": [
+      "a",
+      "b",
+      "c"
+    ],
+    "StackAlphabet": [
+      "#",
+      "a",
+      "b",
+      "c",
+      "❌"
+    ],
+    "States": [
+      {
+        "ID": 1,
+        "Name": "Such A",
+        "x": 150,
+        "y": 150,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 1,
+            "Target": 2,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "a",
+                "❌",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 1,
+            "Target": 1,
+            "x": 0,
+            "y": -150,
+            "Labels": [
+              [
+                "❌",
+                "❌",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 1,
+            "Target": 6,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "#",
+                "#",
+                "L"
+              ]
+            ]
+          }
+        ],
+        "Start": true
+      },
+      {
+        "ID": 2,
+        "Name": "Such B",
+        "x": 350,
+        "y": 150,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 2,
+            "Target": 2,
+            "x": 0,
+            "y": -150,
+            "Labels": [
+              [
+                "a",
+                "a",
+                "R"
+              ],
+              [
+                "❌",
+                "❌",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 2,
+            "Target": 4,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "b",
+                "❌",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 4,
+        "Name": "Such C",
+        "x": 560,
+        "y": 150,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 4,
+            "Target": 4,
+            "x": 0,
+            "y": -150,
+            "Labels": [
+              [
+                "b",
+                "b",
+                "R"
+              ],
+              [
+                "❌",
+                "❌",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 4,
+            "Target": 5,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "c",
+                "❌",
+                "L"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 5,
+        "Name": "Rück",
+        "x": 330,
+        "y": 310,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 5,
+            "Target": 5,
+            "x": 0,
+            "y": 30,
+            "Labels": [
+              [
+                "b",
+                "b",
+                "L"
+              ],
+              [
+                "❌",
+                "❌",
+                "L"
+              ],
+              [
+                "a",
+                "a",
+                "L"
+              ]
+            ]
+          },
+          {
+            "Source": 5,
+            "Target": 1,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "#",
+                "#",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 6,
+        "Name": "Ende",
+        "x": 80,
+        "y": 290,
+        "Final": true,
+        "Radius": 30,
+        "Transitions": [],
+        "Start": false
+      }
+    ],
+    "lastInputs": [
+      [
+        "a",
+        "a",
+        "a",
+        "b",
+        "b",
+        "b",
+        "c",
+        "c",
+        "c"
+      ]
+    ]
+  }
+}
