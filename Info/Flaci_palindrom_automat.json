@@ -1,0 +1,192 @@
+﻿{
+  "name": "Klammern",
+  "description": "",
+  "type": "NKA",
+  "automaton": {
+    "acceptCache": [],
+    "simulationInput": [
+      "a",
+      "b",
+      "b",
+      "a",
+      "$",
+      "a",
+      "b",
+      "b",
+      "a"
+    ],
+    "Alphabet": [
+      "a",
+      "b",
+      "$"
+    ],
+    "StackAlphabet": [
+      "#",
+      "A",
+      "B"
+    ],
+    "States": [
+      {
+        "ID": 1,
+        "Name": "q0",
+        "x": 150,
+        "y": 270,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 1,
+            "Target": 1,
+            "x": 0,
+            "y": -150,
+            "Labels": [
+              [
+                "#",
+                "a",
+                [
+                  "A",
+                  "#"
+                ]
+              ],
+              [
+                "#",
+                "b",
+                [
+                  "B",
+                  "#"
+                ]
+              ],
+              [
+                "A",
+                "a",
+                [
+                  "A",
+                  "A"
+                ]
+              ],
+              [
+                "B",
+                "a",
+                [
+                  "A",
+                  "B"
+                ]
+              ],
+              [
+                "B",
+                "b",
+                [
+                  "B",
+                  "B"
+                ]
+              ],
+              [
+                "A",
+                "b",
+                [
+                  "B",
+                  "A"
+                ]
+              ]
+            ]
+          },
+          {
+            "Source": 1,
+            "Target": 2,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "B",
+                "$",
+                [
+                  "B"
+                ]
+              ],
+              [
+                "A",
+                "$",
+                [
+                  "A"
+                ]
+              ],
+              [
+                "#",
+                "$",
+                [
+                  "#"
+                ]
+              ]
+            ]
+          }
+        ],
+        "Start": true
+      },
+      {
+        "ID": 2,
+        "Name": "q1",
+        "x": 330,
+        "y": 270,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 2,
+            "Target": 2,
+            "x": 0,
+            "y": -150,
+            "Labels": [
+              [
+                "A",
+                "a",
+                []
+              ],
+              [
+                "B",
+                "b",
+                []
+              ]
+            ]
+          },
+          {
+            "Source": 2,
+            "Target": 3,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "#",
+                "",
+                []
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 3,
+        "Name": "q2",
+        "x": 510,
+        "y": 270,
+        "Final": true,
+        "Radius": 30,
+        "Transitions": [],
+        "Start": false
+      }
+    ],
+    "lastInputs": [
+      [
+        "a",
+        "b",
+        "b",
+        "a",
+        "$",
+        "a",
+        "b",
+        "b",
+        "a"
+      ]
+    ]
+  }
+}
